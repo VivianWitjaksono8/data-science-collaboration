@@ -4,6 +4,13 @@ Utility functions for the data science collaboration project.
 This module contains helper functions that are used across different
 parts of the project.
 """
+def calculate_statistics(data):
+    """Calculate basic statistics for a dataset."""
+    return{
+        'mean': data.mean(),
+        'std': data.std(),
+        'count': len(data)
+    }
 
 import pandas as pd
 import numpy as np
